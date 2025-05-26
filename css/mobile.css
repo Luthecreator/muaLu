@@ -1,0 +1,634 @@
+@media screen and (max-width: 678px){
+
+    nav{
+        position: relative;
+        z-index: 1000;
+        background-color: white;
+        width: 100%;
+    }
+    
+        .menu{
+            position: absolute;
+            right: 0px;
+            height: 93vh;
+            top: 6.5vh;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            transform: translate(100%);
+            transition: transform 0.5s ease-in;
+            bottom: 0;
+            padding: 70px 10px 90px 45px;
+        }
+
+        .menu li{
+            position: relative;
+            left: -10px;
+        } 
+    
+        body{
+            overflow-x: hidden;
+            /* to avoid horizontal scrolling */
+        }
+    
+        .menu li{
+            opacity: 0;
+            /* to make links not visible at first */
+        }
+    
+        .burger{
+            display: block;
+            cursor: pointer;
+            position: absolute;
+            left: 290px;
+
+        }
+    
+        /* transform the nav links back to position */
+        .nav-active{
+            transform: translate(0);
+        }
+        
+    
+    
+        /* Animate the navigation links one by one */
+    
+        @keyframes navLinkFade {
+            from{
+                opacity: 0;
+                transform: translateX(50px)
+            }
+            to{
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+    
+        /* toggle the lines */
+        .toggle .line1{
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+    
+        .toggle .line2{
+            opacity: 0;
+        }
+    
+        .toggle .line3{
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+
+        /* home */
+
+        .home{
+    background-color: rgb(32, 32, 74);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0px;
+    top: -20px;
+}
+
+.home h1{
+    color: white;
+    font-size: 90px;
+    position: absolute;
+    left: 20px;
+    top: 90px;
+    font-family: thisfont;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.home h5{
+    color: white;
+    font-family: myFont;
+    font-weight: 100;
+    position: absolute;
+    left: 90px;
+    top: 380px;
+
+}
+
+.home .contact{
+    position: absolute;
+    left: 350px;
+    top: 330px;
+   
+}
+
+
+.home button{
+    position: absolute;
+    top: 450px;
+    left: 90px;
+    height: 60px;
+    width: 170px;
+    border-radius: 15px;
+    background-color: transparent;
+    box-shadow: 12px 12px 16px 0 rgb(14, 14, 50), inset 0 0 0 0 transparent;
+    transition: box-shadow 200ms, transform 300ms cubic-bezier(.2,2,1,1);
+
+}
+
+.home button:hover{
+    color: rgb(14, 14, 50);
+    }
+    
+.home button:active{
+     box-shadow: 0 0 0 transparent, inset 8px 8px 12px 0 rgb(14, 14, 50), inset -8px -8px 12px 0 rgb(31, 28, 48);
+     transform: scale(.9);
+    }
+
+button .btn1{
+        position: relative;
+        top: 1px;
+        left: 1px;
+        font-size: 15px;
+        text-decoration: none;
+        font-family: myFont ;
+        color: rgb(180, 170, 205);
+       
+    }
+
+/* portfolio */
+
+.image1{
+    width: 100%;
+    height: 30vh;
+    position: relative;
+}
+
+.img1{
+    width: 120px;
+    height: 170px;
+    position: absolute;
+    left: 20px;
+    top: 90px;
+}
+
+.img2{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 90px;
+    left: 170px;
+}
+
+.img3{
+    width: 120px;
+    height: 170px;
+    position: absolute;
+    left: 20px;
+    top: 290px;
+}
+
+.port h3{
+    color: black;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 70px;
+    left: 150px;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.image2{
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    top: 150px;
+}
+
+.img4{
+    position: absolute;
+    width: 170px;
+    height: 120px;
+    left: 170px;
+    top:200px ;
+}
+
+.img5{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 20px;
+    top: 400px;
+}
+
+.img6{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 180px;
+    top: 350px;
+}
+
+.image3{
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    top: 370px;
+}
+
+.img7{
+    width: 120px;
+    height: 190px;
+    position: absolute;
+    left: 20px;
+    top: 360px;
+}
+
+.img8{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 170px;
+    top: 360px;
+}
+
+.img9{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 20px;
+    top: 580px;
+}
+
+.img10{
+   width: 120px;
+    height: 170px;
+    position: absolute;
+    left: 190px;
+    top: 560px;
+}
+
+.image4{
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+    top: 820px;
+}
+
+.img11{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 20px;
+    top: 310px;
+}
+
+.img12{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 180px;
+    top: 310px;
+}
+
+.img13{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 20px;
+    top: 490px;
+}
+
+.image5{
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    top: 900px;
+}
+
+
+.img14{
+    width: 130px;
+    height: 170px;
+    position: absolute;
+    left: 190px;
+    top: 410px;
+
+}
+
+.img15{
+    width: 130px;
+    height: 170px;
+    position: absolute;
+    left: 20px;
+    top: 590px;
+}
+
+.img16{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 180px;
+    top: 610px;
+}
+
+.image6{
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+    top: 1080px;
+}
+
+.img17{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 20px;
+    top: 610px;
+}
+
+.img18{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 180px;
+    top: 610px;
+}
+
+.img19{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 20px;
+    top: 790px;
+}
+
+/* Services Contact */
+
+.services{
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(32, 32, 74);
+    left: 0px;
+    top: 0px;
+}
+
+.services h1{
+    color: white;
+    position: absolute;
+    left: 140px;
+    top: 50px;
+    font-family: myFont;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.services .pic1{
+    width: 270px;
+    height: 250px;
+    position: absolute;
+    left: 40px;
+    top: 120px;
+    border-radius: 15px;
+}
+
+.services .offer{
+    position: absolute;
+    color: white;
+    font-family: myFont;
+    font-weight: lighter;
+    top: 370px;
+    left: 80px;
+}
+
+.contact{
+    position: absolute;
+    width: 90%;
+    height: 60vh;
+    left: 80px;
+    top: 760px;
+}
+
+.contact h1{
+    z-index: 1000;
+    color: black;
+    position: absolute;
+    left: 20px;
+    top: -170px;
+    font-family: myFont;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.contact img{
+    width: 800px;
+    position: absolute;
+    left: -170px;
+    top: -170px;
+
+}
+
+.contact .contacts{
+    z-index: 1000;
+    position: absolute;
+    top: 20px;
+    left: -50px;
+    background-color: white;
+    width: 280px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.contacts h6{
+    position: absolute;
+    font-size: 10px;
+    font-family: myFont;
+    font-weight: lighter;
+    left: 20px;
+    top: -10px;
+}
+
+.contacts .icon1{
+    position: absolute;
+    top: 10px;
+    left: 120px;
+    
+}
+
+.contacts h5{
+    position: absolute;
+    font-size: 10px;
+    font-family: myFont;
+    font-weight: lighter;
+    left: 120px;
+    top: 20px;
+}
+
+.contacts .icon2{
+    position: absolute;
+    top: 10px;
+    left: 230px;
+    font-size: 20px;
+}
+
+   /* about */
+
+.about img{
+    width: 400px;
+    height: 560px;
+    position: absolute;
+    top: 30px;
+    left: -20px;
+}
+
+.about .aboutme{
+    position: absolute;
+    left: 40px;
+    top: 100px;
+    background-color: white;
+    opacity: 80%;
+    width: 270px;
+    height: 430px;
+}
+
+.aboutme h3{
+    position: absolute;
+    top: -20px;
+    left: 80px;
+    font-family: thisfont;
+}
+.aboutme p{
+    font-family: myFont;
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    left: 8px;
+    width: 250px;
+    text-align: center;
+    top: 50px;
+}
+
+.about .iconic{
+    position: absolute;
+    left: 95px;
+    top: 560px;
+    padding: 20px;
+    font-size: 8px;
+}
+
+.about .iconic .iconsticker .img1{
+    position: absolute;
+    top: 20px;
+    width: 90px;
+    height: 60px;
+    left: -10px;
+}
+
+.about .iconic .iconsticker .img2{
+    position: absolute;
+    top: 10px;
+    width: 90px;
+    height: 70px;
+    left: 75px;
+}
+
+.about .iconic .icons{
+    position: absolute;
+    top: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
